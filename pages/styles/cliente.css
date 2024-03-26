@@ -1,0 +1,15 @@
+body {
+    background-color: #f8f9fa; /* Cor de fundo */
+}
+
+.card {
+    background-color: #ffffff; /* Cor de fundo do card */
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.card-header {
+    background-color: #343a40; /* Cor de fundo do cabeçalho do card */
+    color: #ffffff; /* Cor do texto do cabeçalho do card */
+    border-bottom: none; /* Sem borda inferior */
+}

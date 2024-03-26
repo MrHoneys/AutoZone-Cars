@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+      overflow-x: hidden; /* remove a barra de rolagem horizontal */
+}
+
+/* ====================================== LOGO  ====================================== */
+
+.logo {
+    width: 145px;
+    background: black; 
+    border: none;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito hover */
+
+}
+
+.logo:hover {
+    transform: translateY(5px); /* Move a imagem 5 pixels para baixo quando o mouse passa por cima */
+}
+
+/* ====================================== BARRA DE NAVEGAÇÃO  ====================================== */
+
+.navbar {
+    background-color: #09090a;
+    width: 1690px;
+    right: 164px;
+}
+
+.navbar-nav {
+    margin: 0px 687px 13px;
+}
+
+.nav-link {
+    color: white !important; /* Altera a cor do texto dos links para branco */
+}
+
+.nav-link:hover {
+    color: rgba(240, 12, 12, 0.402) !important; /* Altera a cor do texto dos links quando o mouse passa por cima */
+}
+
+.navbar-toggler {
+    border-color: #ffffff; /* Altera a cor da borda do botão de toggle */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Altera a cor do ícone do botão de toggle */
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none; /* Remove a borda ao focar ou clicar no botão de toggle */
+}
+
+/* Search form */
+.form-inline {
+    justify-content: center; /* Centraliza o formulário de busca */
+}
+
+.form-control {
+    border-color: #ffffff; /* Altera a cor da borda do campo de busca */
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: rgba(240, 12, 12, 0.402);
+    padding-right: 51px;
+    margin-right: 50px;
+    text-align: center;
+    line-height: 17px;
+    padding-left: 50px;
+    height: 37px;
+}
+
+.btn-outline-success:hover {
+    background-color: rgba(240, 12, 12, 0.402); /* Altera a cor de fundo do botão de busca quando o mouse passa por cima */
+    border-color: rgba(240, 12, 12, 0.402); /* Altera a cor da borda do botão de busca */
+
+}
+
+/* Container */
+.container-fluid {
+    padding-top: 154px; /* Altera o espaçamento superior do container */
+}
+
+/* ====================================== COUROSSEL  ====================================== */
+.carousel {
+  margin-top: -1px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.carousel-caption h5 {
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  margin: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ====================================== ALGUNS CARROS  ====================================== */
+
+
+.container {
+  margin-top: 20px; /* Margem superior para separar dos outros elementos */
+}
+
+.card {
+  margin-bottom: 20px; /* Margem inferior para separar os cards */
+}
+
+.card-img-top {
+  height: 320px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-family: Arial, sans-serif; /* Fonte do título */
+  font-size: 1.25rem; /* Tamanho do título */
+  font-weight: bold; /* Peso da fonte do título */
+  color: red; /* Cor do título */
+  text-transform: uppercase; /* Transformação para maiúsculas */
+  letter-spacing: 0.5px; /* Espaçamento entre letras */
+  text-align: left; /* Alinhamento do texto */
+  margin-bottom: 10px; /* Margem inferior do título */
+}
+
+.card-text {
+  color: #6c757d; /* Cor do texto da descrição */
+}
+
+.btn-primary {
+  background-color: #dc3545; /* Cor de fundo do botão */
+  border-color: #dc3545; /* Cor da borda do botão */
+}
+
+.btn-primary:hover {
+  background-color: #c82333; /* Cor de fundo do botão ao passar o mouse */
+  border-color: #bd2130; /* Cor da borda do botão ao passar o mouse */
+}

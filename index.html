@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK DO BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- LINK DO STYLE CSS -->
+    <link rel="stylesheet" href="styles/index.css">
+    <title>AutoZone</title>
+</head>     
+<body>
+
+    <!--- LOGO -->
+    <div class="fixed-top d-flex justify-content-center align-items-center" style="background-color: black; height: 156px; overflow: hidden; ">
+        <img src="https://img.freepik.com/vetores-premium/sport-car_73313-74.jpg" class="img-thumbnail logo" alt="logo" style="width: 175px;">
+    </div>
+    
+    <!--- BARRA DE NAVEGAÇÃO -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Lojas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Estoque</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">O AutoZone</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pages/login.html">Login</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+<!-- CAROUSEL-->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  
+  <div class="carousel-inner">
+   
+    <div class="carousel-item active">
+      <img src="images/walpaper_principal/AUTOZONE.COM.BR.png" class="d-block w-100" style="max-width: auto; height: auto;" alt="Slide 1">
+   
+    </div>
+  </div>
+  
+</div>
+
+<!-- ALGUNS CARROS -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4" style="font-family: Arial, sans-serif; font-size: 28px; font-weight: bold; color: #333; text-transform: uppercase; letter-spacing: 1px;">Descubra os Melhores Veículos Disponíveis para Compra</h2>
+    <div class="row" id="carros">
+      <!-- Carro 1 -->
+      <div class="col-md-4">
+          <div class="card">
+              <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2024/202403/20240313/toyota-corolla-2.0-vvtie-flex-xei-direct-shift-wmimagem19015774127.jpg?s=fill&w=552&h=414&q=60" class="card-img-top" alt="Carro 1">
+              <div class="card-body">
+                  <h5 class="card-title">TOYOTA COROLLA</h5>
+                  <p class="card-text">2.0 VVT-IE FLEX XEI DIRECT SHIFT</p>
+                  <a href="#" class="btn btn-primary">Ver Detalhes</a>
+              </div>
+          </div>
+      </div>
+      <!-- Carro 2 -->
+      <div class="col-md-4">
+          <div class="card">
+              <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2024/202402/20240203/honda-civic-2.0-16v-flexone-exl-4p-cvt-wmimagem11081011916.jpg?s=fill&w=1920&h=1440&q=75" class="card-img-top" alt="Carro 2">
+              <div class="card-body">
+                  <h5 class="card-title">HONDA CIVIC</h5>
+                  <p class="card-text">2.0 16V FLEXONE EX 4P CVT</p>
+                  <a href="#" class="btn btn-primary">Ver Detalhes</a>
+              </div>
+          </div>
+      </div>
+      <!-- Carro 3 -->
+
+  </div>
+</div>
+
+    <!-- LINK DO BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script/index.js"></script>
+
+  </body>
+</html>
