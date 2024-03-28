@@ -1,6 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+// Função para ler carros do Local Storage
+function lerCarrosDoLocalStorage() {
     // Verifica se há algum item no Local Storage
-    if(localStorage.length > 0) {
+    if (localStorage.length > 0) {
         // Loop por todos os itens no Local Storage
         for (let i = 0; i < localStorage.length; i++) {
             const key = localStorage.key(i);
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (key === "carros") {
                 // Converte o valor de string para um objeto JavaScript
                 const carros = JSON.parse(value);
-                
+
                 // Loop pelos carros e exibe-os na tela
                 carros.forEach(carro => {
                     displayCarro(carro);
@@ -21,46 +22,30 @@ document.addEventListener("DOMContentLoaded", function() {
         // Se o Local Storage estiver vazio ou não contiver dados de carros, exibe uma mensagem na tela
         displayEmptyMessage();
     }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Chama a função para ler carros do Local Storage
+    lerCarrosDoLocalStorage();
 });
 
 // Adiciona um evento de 'submit' para o formulário de pesquisa
-// Adiciona um evento de 'submit' para o formulário de pesquisa
-document.querySelector('form').addEventListener('submit', function(event) {
+document.querySelector('form').addEventListener('submit', function (event) {
     event.preventDefault();
     const searchTerm = document.querySelector('input[type="search"]').value.trim().toLowerCase();
     const carros = document.querySelectorAll('.card');
 
     // Percorre todos os carros para verificar se o título corresponde ao termo de pesquisa
-    carros.forEach(function(carro) {
+    carros.forEach(function (carro) {
         const titulo = carro.querySelector('.card-title').textContent.trim().toLowerCase();
         const displayStyle = titulo.includes(searchTerm) ? 'block' : 'none';
         carro.style.display = displayStyle;
-    });
-
-    // Ordena os carros para mostrar primeiro os que correspondem ao termo de pesquisa
-    const carrosContainer = document.querySelector('#carros');
-    const carrosArray = Array.from(carrosContainer.children);
-    carrosArray.sort((a, b) => {
-        const titleA = a.querySelector('.card-title').textContent.trim().toLowerCase();
-        const titleB = b.querySelector('.card-title').textContent.trim().toLowerCase();
-        const containsTermA = titleA.includes(searchTerm);
-        const containsTermB = titleB.includes(searchTerm);
-        if (containsTermA && !containsTermB) return -1;
-        if (!containsTermA && containsTermB) return 1;
-        return 0;
-    });
-    // Limpa os carros do container
-    carrosContainer.innerHTML = '';
-    // Adiciona os carros ordenados de volta ao container
-    carrosArray.forEach(carro => {
-        carrosContainer.appendChild(carro);
     });
 
     // Scroll para a div de carros
     const carrosDiv = document.querySelector('.container.mt-5');
     carrosDiv.scrollIntoView({ behavior: 'smooth' });
 });
-
 
 // Função para exibir os dados de um carro na tela
 function displayCarro(carro) {
@@ -86,16 +71,26 @@ function displayCarro(carro) {
     
     const description = document.createElement("p");
     description.classList.add("card-text");
-    description.textContent = carro.descricao;
+    description.textContent = carro.caracteristicas;
+
+    const marca = document.createElement("p"); // Adiciona um parágrafo para exibir a marca
+    marca.textContent = `Marca: ${carro.marca}`; // Adiciona a marca do carro ao parágrafo
+    marca.style.color = "#6c757d"; // Define a cor do texto como branco
+
+    const preco = document.createElement("p"); // Adiciona um parágrafo para exibir o preço
+    preco.textContent = carro.preco; // Adiciona o preço do carro ao parágrafo
+    preco.style.color = "#6c757d"; // Define a cor do texto como branco
     
     const link = document.createElement("a");
     link.href = "#";
     link.classList.add("btn", "btn-primary");
-    link.textContent = "Ver Detalhes";
+    link.textContent = "Comprar";
     
     // Adiciona os elementos ao card
     cardBody.appendChild(title);
     cardBody.appendChild(description);
+    cardBody.appendChild(marca); // Adiciona o parágrafo com a marca do carro
+    cardBody.appendChild(preco); // Adiciona o parágrafo com o preço do carro
     cardBody.appendChild(link);
     
     card.appendChild(img);
@@ -107,6 +102,7 @@ function displayCarro(carro) {
     const carrosContainer = document.querySelector('.container .row'); // Seleciona a div com a classe "row" dentro da div com a classe "container"
     carrosContainer.appendChild(coluna);
 }
+
 
 // Função para exibir mensagem de Local Storage vazio ou sem dados de carros
 function displayEmptyMessage() {

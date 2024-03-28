@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoZone | Painel</title>
+    <!-- LINK DO BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- LINK DO STYLE CSS -->
+    <link rel="stylesheet" href="styles/painel.css">
+    <title>AutoZone | Cadastro</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Versão 1.0</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrar_carros.html">Cadastrar Carros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrar_clientes.html">Cadastrar Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clientes_registrados.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carros_registrados.html">Carros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark py-4">
+        <div class="container text-center">
+            <h1 class="display-4 text-white">AutoZone</h1>
+        </div>
+    </header> 
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title text-white">CADASTRAMENTO DE CARROS</h5>
+                    </div>
+                    <div class="card-body">
+                        <form onsubmit="enviar(event)">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Modelo De Carro</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Digite o nome do carro" required>
+                            </div>
+    
+
+                            <div class="mb-3">
+                                <label for="marca" class="form-label">Marca do Carro</label>
+                                <select class="form-select" id="marca" required>
+                                    <option value="" selected disabled>Selecione a marca do carro</option>
+                                    <option value="Aston Martin">Aston Martin</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="Bentley">Bentley</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="BMW Motorrad">BMW Motorrad</option>
+                                    <option value="BYD">BYD</option>
+                                    <option value="Caoa Chery">Caoa Chery</option>
+                                    <option value="Chevrolet">Chevrolet</option>
+                                    <option value="Chrysler">Chrysler</option>
+                                    <option value="Citroën">Citroën</option>
+                                    <option value="Dodge">Dodge</option>
+                                    <option value="Ferrari">Ferrari</option>
+                                    <option value="Fiat">Fiat</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Great Wall">Great Wall</option>
+                                    <option value="Honda">Honda</option>
+                                    <option value="Husqvarna">Husqvarna</option>
+                                    <option value="Hyundai">Hyundai</option>
+                                    <option value="JAC">JAC</option>
+                                    <option value="Jaguar">Jaguar</option>
+                                    <option value="Jeep">Jeep</option>
+                                    <option value="Kia">Kia</option>
+                                    <option value="Lamborghini">Lamborghini</option>
+                                    <option value="Land Rover">Land Rover</option>
+                                    <option value="Lexus">Lexus</option>
+                                    <option value="Lifan">Lifan</option>
+                                    <option value="Maserati">Maserati</option>
+                                    <option value="McLaren">McLaren</option>
+                                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                    <option value="Mini">Mini</option>
+                                    <option value="Mitsubishi">Mitsubishi</option>
+                                    <option value="Nissan">Nissan</option>
+                                    <option value="Peugeot">Peugeot</option>
+                                    <option value="Porsche">Porsche</option>
+                                    <option value="Ram">Ram</option>
+                                    <option value="Renault">Renault</option>
+                                    <option value="Rolls Royce">Rolls Royce</option>
+                                    <option value="Royal Enfield">Royal Enfield</option>
+                                    <option value="Seres">Seres</option>
+                                    <option value="Smart">Smart</option>
+                                    <option value="Subaru">Subaru</option>
+                                    <option value="Suzuki">Suzuki</option>
+                                    <option value="Toyota">Toyota</option>
+                                    <option value="Triumph">Triumph</option>
+                                    <option value="Troller">Troller</option>
+                                    <option value="Volkswagen">Volkswagen</option>
+                                    <option value="Volvo">Volvo</option>
+                                    <option value="Yamaha">Yamaha</option>
+                                </select>
+                            </div>
+    
+                            <div class="mb-3">
+                                <label for="ano" class="form-label">Ano do Carro</label>
+                                <input type="text" class="form-control" id="ano" placeholder="Digite o ano do carro" required>
+                            </div>
+    
+                            <div class="mb-3">
+                                <label for="tipo" class="form-label">Tipo do Carro</label>
+                                <input type="text" class="form-control" id="tipo" placeholder="Digite o tipo do carro" required>
+                            </div>
+    
+                            <div class="mb-3">
+                                <label for="preco" class="form-label">Preço do Veículo</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">R$</span>
+                                    <input type="text" class="form-control" id="preco" placeholder="Digite o preço do veículo" required>
+                                </div>
+                            </div>
+    
+                            <div class="mb-3">
+                                <label for="caracteristicas" class="form-label">Características Técnicas</label>
+                                <textarea class="form-control" id="caracteristicas" rows="3" required></textarea>
+                            </div>
+    
+                            <div class="mb-3">
+                                <label for="foto" class="form-label">Foto do Carro</label>
+                                <input type="file" class="form-control" id="foto">
+                            </div>
+    
+                            <button type="submit" class="btn btn-primary">Adicionar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- SCRIPTS DO BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script/cadastar.js"></script>
+
+    <div class="container mt-5" id="mensagem"></div>
+
+</body>
+</html>

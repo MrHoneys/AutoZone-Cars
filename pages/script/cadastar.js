@@ -3,9 +3,10 @@ function enviar(event) {
 
     var nome = document.getElementById("nome").value;
     var marca = document.getElementById("marca").value;
-    var loja = document.getElementById("loja").value;
+    var ano = document.getElementById("ano").value;
+    var tipo = document.getElementById("tipo").value;
     var preco = document.getElementById("preco").value;
-    var descricao = document.getElementById("descricao").value;
+    var caracteristicas = document.getElementById("caracteristicas").value;
 
     // Obtendo o arquivo de imagem selecionado
     var foto = document.getElementById("foto").files[0];
@@ -19,10 +20,11 @@ function enviar(event) {
             var carro = {
                 nome: nome,
                 marca: marca,
-                loja: loja,
+                ano: ano,
+                tipo: tipo,
                 preco: preco,
+                caracteristicas: caracteristicas,
                 foto: fotoBase64, // Salvando a imagem como base64
-                descricao: descricao
             };
 
             // Obtendo os carros existentes ou inicializando uma lista vazia
@@ -35,10 +37,11 @@ function enviar(event) {
             // Limpa os campos do formulário
             document.getElementById("nome").value = "";
             document.getElementById("marca").value = "";
-            document.getElementById("loja").value = "";
+            document.getElementById("ano").value = "";
+            document.getElementById("tipo").value = "";
             document.getElementById("preco").value = "";
+            document.getElementById("caracteristicas").value = "";
             document.getElementById("foto").value = "";
-            document.getElementById("descricao").value = "";
 
             // Exibe mensagem de sucesso
             var mensagemDiv = document.createElement("div");
@@ -60,48 +63,19 @@ function enviar(event) {
     }
 }
 
+// Função para formatar o valor para o formato de moeda brasileira (R$)
+function formatarMoeda(valor) {
+    return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(valor);
+}
 
-    // Função para formatar o valor para o formato de moeda brasileira (R$)
-    function formatarMoeda(valor) {
-        return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(valor);
-    }
+// Função para remover os pontos e vírgulas e formatar a moeda quando o campo de preço ganhar foco
+document.getElementById('preco').addEventListener('focus', function() {
+    this.value = this.value.replace(/\D/g, '');
+    this.value = this.value ?  formatarMoeda(parseFloat(this.value) / 100): '';
+});
 
-    // Função para remover os pontos e vírgulas e formatar a moeda quando o campo de preço ganhar foco
-    document.getElementById('preco').addEventListener('focus', function() {
-        this.value = this.value.replace(/\D/g, '');
-        this.value = formatarMoeda(parseFloat(this.value) / 100);
-    });
-
-    // Função para remover os pontos e vírgulas e formatar a moeda quando o campo de preço perder o foco
-    document.getElementById('preco').addEventListener('blur', function() {
-        this.value = this.value.replace(/\D/g, '');
-        this.value = formatarMoeda(parseFloat(this.value) / 100);
-    });
-
-    // Função para exibir as opções de lojas cadastradas
-    function exibirLojas() {
-        // Recuperar os dados do localStorage
-        var dadosClientes = JSON.parse(localStorage.getItem('DadosClientes'));
-
-        // Verificar se existem dados
-        if (dadosClientes && dadosClientes.length > 0) {
-            var selectLoja = document.getElementById('loja');
-
-            // Limpar opções anteriores
-            selectLoja.innerHTML = '<option value="">Selecione a loja</option>';
-
-            // Iterar sobre os dados e adicionar opções ao select
-            dadosClientes.forEach(function(cliente) {
-                var option = document.createElement('option');
-                option.value = cliente.nomeLoja;
-                option.textContent = cliente.nomeLoja;
-                selectLoja.appendChild(option);
-            });
-        } else {
-            // Se não houver dados, exibir uma mensagem
-            document.getElementById('loja').innerHTML = '<option value="">Nenhuma loja cadastrada</option>';
-        }
-    }
-
-    // Chamada inicial para exibir as lojas
-    exibirLojas();
+// Função para remover os pontos e vírgulas e formatar a moeda quando o campo de preço perder o foco
+document.getElementById('preco').addEventListener('blur', function() {
+    this.value = this.value.replace(/\D/g, '');
+    this.value = this.value ?  formatarMoeda(parseFloat(this.value) / 100): '';
+});

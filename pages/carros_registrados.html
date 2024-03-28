@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AutoZone | Carros</title>
+        <!-- LINK DO BOOTSTRAP CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- LINK DO STYLE CSS -->
+        <link rel="stylesheet" href="styles/carros_registrados.css">
+    </head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AutoZone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrar_carros.html">Cadastrar Carros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrar_clientes.html">Cadastrar Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clientes_registrados.html">Clientes</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="carros_registrados.html">Carros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <!-- Tabela para exibir os carros cadastrados -->
+                <table class="table table-custom">
+                    <thead class="bg-dark text-light">
+                        <tr>
+                            <th class="text-center">Modelo De Carro</th>
+                            <th class="text-center">Marca De Carro</th>
+                            <th class="text-center">Ano Do Carro</th>
+                            <th class="text-center">Tipo Do Carro</th>
+                            <th class="text-center">Preço do Veiculo</th>
+                            <th class="text-center">Caracteristicas</th>
+                            <th class="text-center">Edição</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaCarros">
+                        <!-- Os dados dos carros serão adicionados aqui dinamicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+<!-- Modal de Edição -->
+<div class="modal fade" id="editarCampoModal" tabindex="-1" aria-labelledby="editarCampoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editarCampoModalLabel">Editar Campo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formEditarCampo">
+                    <div class="mb-3">
+                        <label for="campoEditar" class="form-label">Campo a Editar</label>
+                        <select class="form-select" id="campoEditar">
+                            <option value="nome">Modelo De Carro</option>
+                            <option value="marca">Marca De Carro</option>
+                            <option value="ano">Ano Do Carro</option>
+                            <option value="tipo">Tipo Do Carro</option>
+                            <option value="preco">Preço do Veiculo</option>
+                            <option value="caracteristicas">Caracteristicas</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="novoValor" class="form-label">Novo Valor</label>
+                        <input type="text" class="form-control" id="novoValor">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="salvarEdicao()">Salvar Alterações</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/carros_registrados.js"></script>
+    
+</body>
+</html>
