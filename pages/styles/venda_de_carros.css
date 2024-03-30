@@ -1,0 +1,18 @@
+/* Estilo para o resumo da venda */
+#resumoVenda {
+    margin-bottom: 20px;
+}
+
+/* Estilo para o valor total da venda */
+#valorTotal {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.car-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    max-height: 200px; /* Definindo um tamanho máximo para a altura da imagem */
+}

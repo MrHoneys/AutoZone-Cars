@@ -82,7 +82,7 @@ function displayCarro(carro) {
     preco.style.color = "#6c757d"; // Define a cor do texto como branco
     
     const link = document.createElement("a");
-    link.href = "#";
+    link.href = "pages/vendas_carros.html";
     link.classList.add("btn", "btn-primary");
     link.textContent = "Comprar";
     
