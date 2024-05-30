@@ -1,5 +1,6 @@
-![01](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/bd375927-1103-4014-8007-54e9a7c22ef4)# Bem-vindo ao nosso projeto universitário!
+![01](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/bd375927-1103-4014-8007-54e9a7c22ef4)
 
+# Bem-vindo ao nosso projeto universitário!
 Este site foi desenvolvido como parte de um projeto acadêmico, com o objetivo de explorar e apresentar conteúdos relevantes para a nossa disciplina. Aqui, você encontrará uma variedade de recursos, informações e materiais que abrangem o tema central do nosso projeto.
 
 Navegue com facilidade através das seções intuitivas do nosso site para descobrir conteúdos valiosos e insights relevantes sobre o nosso tópico de estudo. Queremos proporcionar uma plataforma educacional dinâmica e acessível, onde tanto estudantes quanto entusiastas possam encontrar algo de interesse e utilidade.
