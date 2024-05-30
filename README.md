@@ -1,4 +1,4 @@
-# Bem-vindo ao nosso projeto universitário!
+![01](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/bd375927-1103-4014-8007-54e9a7c22ef4)# Bem-vindo ao nosso projeto universitário!
 
 Este site foi desenvolvido como parte de um projeto acadêmico, com o objetivo de explorar e apresentar conteúdos relevantes para a nossa disciplina. Aqui, você encontrará uma variedade de recursos, informações e materiais que abrangem o tema central do nosso projeto.
 
@@ -14,12 +14,12 @@ Navegue com facilidade através das seções intuitivas do nosso site para desco
 
 Utilizando uma combinação de tecnologias modernas e práticas recomendadas de desenvolvimento web, como HTML, CSS e JavaScript, complementadas pelo framework Bootstrap, garantimos uma experiência de usuário fluida e responsiva em todos os dispositivos. Além disso, implementamos recursos avançados, como o armazenamento local através do LocalStorage, para personalizar a interação do usuário e garantir a conveniência de retornar e retomar a exploração do conteúdo a qualquer momento.
 
-![02](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/b73e3837-d0c5-44a0-9c3a-5fae9c9fb993)
-![01](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/8d674778-6840-49a4-87ba-155b![06](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/13d404b1-1583-45eb-9218-830e8b28d866)
-![05](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/f3937c2b-5c44-4941-af2b-94447c303e20)
-![04](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/d67a4a48-6c91-41da-9c27-1092100c1a63)
-![03](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/861f8982-0a13-476e-b6d7-028dd9f6a727)
-8fb1a428)
+![01](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/7af3d428-a07d-4254-91d7-aaae2837f622)
+![02](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/24bffbef-6d4c-43f5-8f2d-fa65040b7092)
+![03](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/3f17e620-f846-4f35-8a88-23f26df18d26)
+![04](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/2f85e7e8-b309-4672-b9a7-9ea566c54b5b)
+![05](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/2ec66172-940e-4d51-b55d-38d295a7d3a4)
+![06](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/8f75fd17-55a8-4ec6-b997-a05c61696f59)
 
 
 Aproveite as imagens acima para ter um vislumbre da estética e funcionalidade do nosso site. Estamos comprometidos em oferecer um recurso valioso para a comunidade acadêmica e além, e esperamos que você encontre inspiração e conhecimento em sua visita ao nosso projeto universitário.
