@@ -14,7 +14,6 @@ Navegue com facilidade através das seções intuitivas do nosso site para desco
 
 Utilizando uma combinação de tecnologias modernas e práticas recomendadas de desenvolvimento web, como HTML, CSS e JavaScript, complementadas pelo framework Bootstrap, garantimos uma experiência de usuário fluida e responsiva em todos os dispositivos. Além disso, implementamos recursos avançados, como o armazenamento local através do LocalStorage, para personalizar a interação do usuário e garantir a conveniência de retornar e retomar a exploração do conteúdo a qualquer momento.
 
-![01](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/7af3d428-a07d-4254-91d7-aaae2837f622)
 ![02](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/24bffbef-6d4c-43f5-8f2d-fa65040b7092)
 ![03](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/3f17e620-f846-4f35-8a88-23f26df18d26)
 ![04](https://github.com/MrHoneys/AutoZone-Cars/assets/143344101/2f85e7e8-b309-4672-b9a7-9ea566c54b5b)
